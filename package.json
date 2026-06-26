@@ -4,12 +4,8 @@
   "description": "Kirana Daily Profit Manager - Track daily sales, purchases and profits",
   "private": true,
   "scripts": {
-    "install:all": "cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build",
-    "start": "cd server && node index.js",
-    "dev:server": "cd server && npm run dev",
-    "dev:client": "cd client && npm run dev",
-    "dev": "echo Run 'npm run dev:server' and 'npm run dev:client' in separate terminals"
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.js"
   },
   "author": "Gaurav Veer",
   "license": "MIT"
