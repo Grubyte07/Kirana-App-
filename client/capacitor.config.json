@@ -1,0 +1,8 @@
+{
+  "appId": "com.kiranaprofit.app",
+  "appName": "Kirana Profit Manager",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

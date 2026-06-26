@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+const isMobile = window.location.protocol === 'capacitor:';
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: isMobile ? 'https://kirana-profit-manager.onrender.com/api' : '/api',
   headers: { 'Content-Type': 'application/json' }
 });
 
