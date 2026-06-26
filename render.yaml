@@ -3,8 +3,8 @@ services:
     name: kirana-profit-manager
     runtime: node
     plan: free
-    buildCommand: chmod +x build.sh && bash build.sh
-    startCommand: node server/index.js
+    buildCommand: npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
