@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dbPath = process.env.NODE_ENV === 'production'
-  ? '/data/kirana_data.db'
+  ? path.join(__dirname, '..', 'kirana_data.db')
   : path.join(__dirname, '..', 'kirana_data.db');
 
 let db = null;
